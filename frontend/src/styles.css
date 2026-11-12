@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+}
+body { @apply m-0 min-h-screen bg-[#f5f6f2] font-sans text-[#183b39]; }
+:focus-visible { outline: 3px solid #176cb0; outline-offset: 2px; }
+[role="region"]:focus-visible { outline-offset: -3px; }
+thead th { @apply bg-[#edf2ef] text-slate-700; }
+th, td { @apply px-4 py-3; }
+tbody tr { @apply border-t border-stone-200; }
+tbody tr:hover { @apply bg-stone-50; }
