@@ -8,8 +8,8 @@ from pydantic import BaseModel
 
 from .dados import AGENDA, DATA, ID, MATRIZ, MODELO, datas, entradas, ler_csv
 
-HOJE = date(2026, 11, 20)
-INICIO_LISTAGEM = date(2026, 1, 20)
+HOJE = date(2026, 1, 20)
+INICIO_LISTAGEM = HOJE
 SEGUNDA = HOJE + timedelta(days=7 - HOJE.weekday())
 DOMINGO = SEGUNDA + timedelta(days=6)
 Faixa = Literal["Baixo", "Médio", "Alto"]

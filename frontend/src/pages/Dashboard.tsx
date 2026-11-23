@@ -11,8 +11,8 @@ const faixas: Risco[] = ['Alto', 'Médio', 'Baixo']
 
 export function Dashboard() {
   const [unidade, setUnidade] = useState('CRAS Areal')
-  const [inicio, setInicio] = useState('2026-10-01')
-  const [fim, setFim] = useState('2026-10-31')
+  const [inicio, setInicio] = useState('2026-01-20')
+  const [fim, setFim] = useState('')
   const [risco, setRisco] = useState('')
   const [painel, setPainel] = useState<Awaited<ReturnType<typeof carregarAgenda>> | null>(null)
   const [erro, setErro] = useState('')
